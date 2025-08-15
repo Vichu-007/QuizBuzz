@@ -29,29 +29,12 @@ QuizBuzz is an interactive quiz app built with **Next.js** and **Tailwind CSS**.
 
 
 
-QuizBuzz/
-│
-├─ public/
-│  ├─ data/                 # JSON files containing quiz questions
-│  └─ images/               # Static assets like images
-│
-├─ components/
-│  ├─ Results.jsx           # Component to display quiz results
-│  ├─ QuestionTimer.jsx     # Countdown timer for each question
-│  └─ SubjectCard.jsx       # Displays available subjects on the home page
-│
-├─ context/
-│  └─ PointsContext.js      # Context API to manage points state
-│
-├─ pages/
-│  ├─ index.js              # Home page of the app
-│  └─ quiz/
-│     └─ [subject].js       # Quiz page for each selected subject
-│
-├─ styles/
-│  └─ globals.css           # Tailwind CSS imports & global styles
-│
-├─ layout.js                # Header and footer components for consistent layout
-├─ package.json             # Project dependencies
-├─ tailwind.config.js       # Tailwind CSS configuration
-└─ README.md                # Project documentation
+public/data/: Contains JSON files for questions.
+components/Results.jsx: Displays the quiz results.
+components/QuestionTimer.jsx: Manages the countdown timer for questions.
+components/SubjectCard.jsx: Displays the subjects available for selection.
+pages/index.js: Home page listing available subjects.
+pages/quiz/[subject].js: Quiz page for each subject.
+public/images: Contains static assets like images.
+context/PointsContext.js: Context for managing points state.
+layout.js: Includes header and footer components.
